@@ -6,6 +6,7 @@ import FlexHorizontal from "../elements/FlexHorizontal";
 import { featuredOn } from "../../data/data";
 import TitlePage from "../elements/text/TitlePage";
 import DescPage from "../elements/text/DescPage";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
@@ -58,7 +59,11 @@ const Hero: React.FC = () => {
             <FlexHorizontal data={featuredOn} />
           </div>
         </div>
-        <img className="mx-auto mt-8" src="/logo/award.png" alt="Award Badge" />
+        <Image
+          className="mx-auto mt-8"
+          src="/logo/award.png"
+          alt="Award Badge"
+        />
       </div>
     </section>
   );

@@ -21,6 +21,7 @@ import FeatureCardGrid from "@/components/elements/FeatureCardGrid"; // pastikan
 import SupportCardGrid from "@/components/elements/SupportCardGrid"; // pastikan ini juga ada
 import Link from "next/link"; // ganti dari react-router ke next
 import Hero from "@/components/fragments/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -79,7 +80,7 @@ export default function Home() {
           />
         }
         addOnBottom={
-          <img
+          <Image
             src="/feature/dashboard.png"
             alt="Dashboard preview"
             className="w-full h-auto object-cover"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface LogoItem {
@@ -31,7 +32,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
               : undefined
           }
         >
-          <img
+          <Image
             src={logo.src}
             alt={logo.alt}
             width={logo.width}

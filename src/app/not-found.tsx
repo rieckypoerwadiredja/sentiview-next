@@ -23,11 +23,12 @@ export default function NotFound() {
               Oops! Page not found
             </h2>
             <p className="text-[#627d98] text-lg max-w-2xl mx-auto mb-2">
-              The page you're looking for doesn't exist or has been moved.
+              The page you&apos;re looking for doesn&apos;t exist or has been
+              moved.
             </p>
             <p className="text-[#627d98] text-base max-w-2xl mx-auto">
-              Don't worry, it happens to the best of us. Let's get you back on
-              track.
+              Don&apos;t worry, it happens to the best of us. Let&apos;s get you
+              back on track.
             </p>
           </div>
 

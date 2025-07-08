@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Advantages: React.FC = () => {
   return (
@@ -68,7 +69,7 @@ const Advantages: React.FC = () => {
           <div className="relative">
             <div className="bg-[#f6f6fc] p-4 rounded-lg">
               <div className="relative rounded-lg overflow-hidden shadow-lg">
-                <img
+                <Image
                   src="/feature/1.png"
                   alt="Coffee shop website example"
                   width={500}
@@ -162,7 +163,7 @@ const Advantages: React.FC = () => {
             </div>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="/feature/2.png"
               alt="Website builder interface"
               width={500}
@@ -256,7 +257,7 @@ const Advantages: React.FC = () => {
             </div>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="/feature/3.png"
               alt="White-label CMS dashboard"
               width={500}
@@ -349,7 +350,7 @@ const Advantages: React.FC = () => {
             </div>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="/feature/4.png"
               alt="Airtable integration"
               width={500}

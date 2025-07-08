@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // Type for each item in the data array
@@ -33,7 +34,7 @@ const FlexHorizontal: React.FC<FlexHorizontalProps> = ({ data }) => {
               )}
 
               {/* Image */}
-              <img
+              <Image
                 src={item.src}
                 alt={item.alt}
                 width={item.width}

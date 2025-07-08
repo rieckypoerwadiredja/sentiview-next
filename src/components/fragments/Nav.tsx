@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Nav: React.FC = () => {
   const [isProductOpen, setIsProductOpen] = useState(false);
@@ -29,7 +30,7 @@ const Nav: React.FC = () => {
           href="/"
           className="text-2xl font-semibold text-[#030521] flex gap-x-2"
         >
-          <img className="max-w-8" src="/logo/sentiview.png" alt="Logo" />
+          <Image className="max-w-8" src="/logo/sentiview.png" alt="Logo" />
           Sentiview
         </Link>
 
