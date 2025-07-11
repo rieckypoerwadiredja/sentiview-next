@@ -28,18 +28,22 @@ const Nav: React.FC = () => {
       <div className="flex h-16 items-center justify-between">
         <Link
           href="/"
-          className="text-2xl font-semibold text-[#030521] flex gap-x-2"
+          className="text-2xl items-center font-semibold text-[#030521] flex gap-x-2"
         >
-          <Image className="max-w-8" src="/logo/sentiview.png" alt="Logo" />
+          <div className="relative w-8 aspect-square">
+            <Image
+              fill
+              className="object-contain"
+              src="/logo/sentiview.png"
+              alt="Logo"
+            />
+          </div>
           Sentiview
         </Link>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link
-            href="/sentiview-ai"
-            className="text-sm font-medium text-[#17134A]"
-          >
+          <Link href="/chat" className="text-sm font-medium text-[#17134A]">
             ✨ Sentiview AI
           </Link>
 
@@ -111,7 +115,7 @@ const Nav: React.FC = () => {
         <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg z-40">
           <div className="flex flex-col px-4 py-4 space-y-2">
             <Link
-              href="/sentiview-ai"
+              href="/chat"
               className="text-sm font-medium text-[#17134A] px-4 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >

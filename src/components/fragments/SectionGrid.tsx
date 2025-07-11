@@ -39,7 +39,7 @@ const SectionGrid: React.FC<SectionGridProps> = ({
         {button && <div className="mt-12">{button}</div>}
       </div>
       {addOnBottom && (
-        <div className="mx-auto !w-full mt-16">{addOnBottom}</div>
+        <div className="relative mx-auto !w-full mt-16">{addOnBottom}</div>
       )}
     </section>
   );

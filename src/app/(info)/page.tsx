@@ -83,6 +83,7 @@ export default function Home() {
           <Image
             src="/feature/dashboard.png"
             alt="Dashboard preview"
+            fill
             className="w-full h-auto object-cover"
           />
         }

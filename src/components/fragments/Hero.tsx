@@ -59,11 +59,14 @@ const Hero: React.FC = () => {
             <FlexHorizontal data={featuredOn} />
           </div>
         </div>
-        <Image
-          className="mx-auto mt-8"
-          src="/logo/award.png"
-          alt="Award Badge"
-        />
+        <div className="relative w-full max-w-xl mt-8 mx-auto aspect-[4/1]">
+          <Image
+            src="/logo/award.png"
+            alt="Award Badge"
+            fill
+            className="object-contain"
+          />
+        </div>
       </div>
     </section>
   );

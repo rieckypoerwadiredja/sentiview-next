@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Nav from "@/components/fragments/Nav";
 import Footer from "@/components/fragments/Footer";
 
@@ -25,12 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <>
+      <header className="border-b border-gray-100 bg-[#FFF9F3]">
+        <Nav />
+      </header>
+      {children}
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }
