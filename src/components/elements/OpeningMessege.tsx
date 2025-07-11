@@ -13,9 +13,9 @@ export function GeneralOpening() {
         Sentiview AI Chat is an intelligent assistant designed to help business
         owners instantly uncover how their products are perceived on e-commerce
         platforms—without reading hundreds of reviews manually. Simply send a
-        link to your product's e-commerce page, and our AI will analyze customer
-        comments using advanced sentiment analysis, delivering clear, actionable
-        insights.
+        link to your product&apos;s e-commerce page, and our AI will analyze
+        customer comments using advanced sentiment analysis, delivering clear,
+        actionable insights.
       </p>
 
       <p className="text-[#3a30ba] font-semibold">

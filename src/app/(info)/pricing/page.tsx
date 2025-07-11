@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Check } from "lucide-react";
-import ButtonGeneral from "@/components/elements/ButtonGeneral";
-import { Switch } from "@/components/elements/Switch";
 import Link from "next/link";
 import CardPlan from "@/components/elements/card/CardPlan";
 
@@ -186,7 +183,7 @@ export default function Component() {
           <p className="text-gray-600 text-center leading-relaxed">
             At Sentiview, we believe every business—big or small—deserves access
             to powerful review analytics without financial barriers. Whether
-            you're just getting started or scaling fast, our platform is
+            you&apos;re just getting started or scaling fast, our platform is
             designed to be accessible and impactful. We handle the heavy
             lifting—data processing, sentiment analysis, and smart summaries—so
             you can focus on what matters: making better product and customer
@@ -205,8 +202,8 @@ export default function Component() {
             Tight budgets shouldn’t limit access to strategic insights. Our team
             is ready to help you explore flexible pricing, early-stage support,
             or academic and community discounts. Whether you need insights for a
-            one-time launch or long-term growth, we're here to guide you toward
-            smarter, more affordable data-driven decisions—together.
+            one-time launch or long-term growth, we&apos;re here to guide you
+            toward smarter, more affordable data-driven decisions—together.
           </p>
           <Link
             href="https://www.whatsapp.com/"

@@ -1,6 +1,7 @@
 "use client";
 import { defaultConversations, userConversations } from "@/data/user";
 import { ChevronLeft, ChevronRight, Lock } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 function SideNav() {
@@ -15,7 +16,7 @@ function SideNav() {
       {/* Logo */}
       <Link href="/" className="p-4 flex gap-x-2 items-center">
         <div className="w-8 h-8">
-          <img className="max-w-8" src="/logo/sentiview.png" alt="Logo" />
+          <Image className="max-w-8" src="/logo/sentiview.png" alt="Logo" />
         </div>
         {fullSideBar && (
           <span className="text-lg font-semibold text-gray-800">Sentiview</span>
@@ -102,7 +103,7 @@ function SideNav() {
         <div className="px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg?height=32&width=32"
                 alt="User avatar"
                 width={32}

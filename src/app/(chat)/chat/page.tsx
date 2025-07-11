@@ -1,15 +1,6 @@
 "use client";
-
-import React, { useEffect, useReducer, useState } from "react";
-import {
-  ArrowRight,
-  RefreshCw,
-  Lock,
-  ChevronLeft,
-  ChevronRight,
-  Link,
-} from "lucide-react";
-import InputChat from "@/components/fragments/InputChat";
+import React from "react";
+import { RefreshCw } from "lucide-react";
 import { GeneralOpening } from "@/components/elements/OpeningMessege";
 
 export default function Page() {

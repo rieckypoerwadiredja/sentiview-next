@@ -46,8 +46,7 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(
-        credentials: { email?: string; password?: string } | undefined,
-        req: any
+        credentials: { email?: string; password?: string } | undefined
       ) {
         try {
           // 1. Validasi input pakai yup
@@ -83,21 +82,23 @@ export const authOptions = {
             name: user.name,
             email: user.email,
           };
-        } catch (err: any) {
-          // Kalau error dari yup
-          if (err.name === "ValidationError") {
+        } catch (err: unknown) {
+          if (err instanceof yup.ValidationError) {
             const fieldErrors: Record<string, string[]> = {};
-            err.inner.forEach((e: any) => {
-              if (!fieldErrors[e.path]) {
-                fieldErrors[e.path] = [];
+            err.inner.forEach((e) => {
+              if (!fieldErrors[e.path!]) {
+                fieldErrors[e.path!] = [];
               }
-              fieldErrors[e.path].push(e.message);
+              fieldErrors[e.path!].push(e.message);
             });
             throw new Error(`VALIDATION_ERROR:${JSON.stringify(fieldErrors)}`);
           }
 
-          // Error biasa (user not found / password salah)
-          throw new Error(err.message || "Login failed");
+          if (err instanceof Error) {
+            throw new Error(err.message || "Login failed");
+          }
+
+          throw new Error("Login failed");
         }
       },
     }),
